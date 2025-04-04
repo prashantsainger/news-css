@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header h1 {
+            text-transform: uppercase;
+            color: greenyellow;
+        }
+
+        .nav-head {
+            width: 100%;
+            display: inline;
+            justify-content: space-around;
+        }
+
+        .nav-head ul {
+            height: 8vh;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color:gray;
+
+        }
+
+        ul li {
+            list-style: none;
+            text-transform: capitalize;
+ }
+
+        .nav-head ul li a {
+            font-size: 1.5em;
+            text-decoration: none;
+            color: darkgreen;
+
+        }
+
+        .head-nav {
+            display: flex;
+        }
+
+        .photo {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 1vh;
+            border-radius: 5px;
+
+        }
+
+
+
+        .photo h4 {
+            background-color: lightslategray;
+            text-align: justify;
+            margin-left: 2%;
+        }
+
+        .nav-lft {
+            width: 60%;
+            display: grid;
+            justify-content: space-around;
+            margin: 1% 1%;
+        }
+
+        .nav-rgt {
+            width: 40%;
+            display: flex;
+            justify-content: center;
+            margin: 1% 1%;
+            /* border-left: 2px solid gray; */
+
+        }
+
+        .para {
+            column-width: 50px;
+            text-align: justify;
+            column-count: 3;
+            column-rule-style: solid;
+            column-rule-color: gray;
+            column-rule-width: 2px;
+        }
+
+        .para-one {
+            font-size: 1.1em;
+            background-color: whitesmoke;
+            text-transform: capitalize;
+            column-span: all;
+            display: grid;
+            color: gray;
+            margin-bottom: 2vh;
+        }
+
+        .para p::first-letter {
+            color: tomato;
+            text-transform: capitalize;
+            font-size: 2rem;
+        }
+
+        hr {
+            width: 100%;
+            height: 1px;
+            border: 1px solid gray;
+            margin-bottom: 2%;
+        }
+
+        .lft-sction {
+            width: 200px;
+            height: 90vh;
+            margin: 2%;
+            border-radius: 5px;
+
+            /* border-left: 2px solid gray; */
+        }
+
+        .lft-sction p::first-letter {
+            font-size: 1.5em;
+            text-transform: capitalize;
+            color: red;
+        }
+
+        .top {
+            margin-bottom: 2vh;
+        }
+
+        .bottom h2 {
+            margin-bottom: 2vh;
+            background-color: cadetblue;
+            border-radius: 5px;
+
+
+        }
+
+        .lft-sction h2 {
+            background-color: cadetblue;
+            border-radius: 5px;
+
+            margin-left: 3%;
+        }
+
+        span {
+            color: goldenrod;
+        }
+
+        img {
+            margin: 2%;
+        }
+
+        p {
+            text-align: justify;
+        }
+
+        .rgt-sction {
+            background-color: grey;
+        }
+
+        .rgt-sction img {
+            height: 110px;
+            margin: 2.5%;
+            border-radius: 5px;
+        }
+
+        .rgt-sction li {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .rgt-sction h2 {
+            margin-top: 3%;
+        }
+
+        .rgt-sction p {
+            margin-top: 3%;
+            margin-right: 2%;
+        }
+
+        img:hover {
+            transform: scale(1.1);
+            z-index: 2;
+            background-color: lightsteelblue;
+            border-radius: 5px;
+            padding: 2%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>the <span>cnn </span> of <span>bharat </span></h1>
+        <div class="nav-head">
+            <ul>
+                <li><a href="">news </a></li>
+                <li><a href="">india </a></li>
+
+                <li><a href="">world </a></li>
+                <li><a href="">politics </a></li>
+                <li><a href="">media </a></li>
+                <li><a href="">education </a></li>
+                <li><a href="">science </a></li>
+                <li><a href="">entertainment </a></li>
+                <li><a href="">weather </a></li>
+            </ul>
+        </div>
+    </header>
+    <section>
+        <div class="head-nav">
+            <div class="nav-lft">
+                <div class="photo">
+                    <div>
+
+                        <img src="download1.jpg" width="240px" height="210px" border-radius="10px">
+                        <h4>Lorem, ipsum dolor.</h4>
+                    </div>
+                    <div>
+                        <img src="download2.jpg" width="240px" border-radius="10px">
+                        <h4>Lorem ipsum dolor sit.</h4>
+                    </div>
+                    <div>
+                        <img src="download3.jpg" width="240px" height="210px" border-radius="10px">
+                        <h4>Lorem, ipsum dolor.</h4>
+                    </div>
+                </div>
+                <hr>
+                <div class="para">
+                    <div class="para-one">
+                        <h2>Lorem ipsum dolor sit amet.</h2>
+                    </div>
+                    <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod soluta molestias modi hic, animi
+                        in
+                        neque
+                        minus dignissimos eius voluptas odit, praesentium sed iste vel. Quo adipisci nihil id debitis
+                        illo
+                        voluptas ipsam,
+                    <div class="phot"><img src="download4.jpg" width="200px" border-radius="10px">
+                        <h4>Lorem ipsum dolor sit amet.</h4>
+                    </div>cumque animi dolor in,maiores, hic nemo vitae blanditiis iure voluptates quaerat explicabo in
+                    porro at, natus tempora
+                    dignissimos sunt dicta velit? Nemo architecto beatae quaerat commodi odit, exercitationem fugiat
+                    nequemaiores, hic nemo vitae blanditiis iure voluptates quaerat explicabo in porro at, natus tempora
+                    dignissimos sunt dicta velit? Nemo architecto beatae quaerat commodi odit, exercitationem fugiat
+                    nequemaiores, hic nemo vitae blanditiis iure voluptates quaerat explicabo in porro at, natus tempora
+                    dignissimos sunt dicta velit? Nemo architecto beatae quaerat commodi odit, exercitationem fugiat
+                    nequemaiores, hic nemo vitae blanditiis iure voluptates quaerat explicabo in porro at, natus tempora
+                    dignissimos sunt dicta velit? Nemo architecto beatae quaerat commodi odit, exercitationem fugiat
+                    nequemaiores, hic nemo vitae blanditiis iure voluptates quaerat explicabo in porro at, natus tempora
+                    dignissimos sunt dicta velit? Nemo architecto beatae quaerat commodi odit, exercitationem fugiat
+                    neque
+                    eveniet possimus, voluptates molestias eum aliquid! Quod,
+                    doloremque vel. Possimus totam ea sunt, non ullam architecto veritatis iusto dolores consequuntur
+                    officiis delectus aperiam voluptatem, ipsa odio incidunt pariatur impedit animi. Necessitatibus at
+                    tempora asperiores aliquid amet corrupti, sunt dolore, omnis vel sit ipsum facere dolorum sint
+                    repellendus obcaecati rem enim consequuntur doloremque similique, impedit accusamus. Fuga quisquam,
+                    laudantium soluta deserunt dicta porro accusantium, recusandae consequuntur sed omnis excepturi quae
+                    quasi delectus enim vel nihil modi! <div class="phot"><img src="download5.jpg" width="200px"
+                            border-radius="10px">
+                        <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit. ?</h4>
+                    </div> Cupiditate provident possimus nisi facere. Debitis optio beatae,
+                    quibusdam laborum dolore suscipit quisquam officia recusandae eos. Repellat fugit quidem nulla
+                    adipisci
+                    cum facere eligendi, asperiores error, tempore explicabo voluptatibus amet quos unde earum possimus
+                    deserunt sint optio distinctio! Facere reprehenderit at expedita neque ex perferendis, possimus ea
+                    fugiat dolorem quia, tempore minus vel temporibus nobis corporis hic. Cumque beatae rerum quasi
+                    neque
+                    repudiandae eos ducimus excepturi, culpa natus maxime accusantium aspernatur placeat nisi debitis
+                    veritatis velit, minus <div class="phot"><img src="download7.jpg" width="200px" border-radius="10px">
+                        <h4>Lorem ipsum dolor sit amet.</h4>
+                    </div> aliquam accusamus
+                    blanditiis? Sequi quos, eos iusto, aspernatur corporis id,
+                    architecto possimus voluptatibus exercitationem magnam molestiae hic! Unde beatae voluptate
+                    doloremque
+                    maiores, hic nemo vitae blanditiis iure voluptates quaerat explicabo in porro at, natus tempora
+                    dignissimos sunt dicta velit? Nemo architecto beatae quaerat commodi odit, exercitationem fugiat
+                    neque
+                    sed similique nihil qui dolore ullam sint vero minus cupiditate nulla deserunt </p>
+                </div>
+            </div>
+            <div class="nav-rgt">
+                <div class="lft-sction">
+                    <div class="top">
+                        <h2>Lorem ipsum dolor sit !</h2>
+                        <img src="download6.jpg" width="200px" height="180px" border-radius="10px">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit maiores, hic nemo vitae blanditiis
+                            iure voluptates quaerat explicabo in porro at, natus tempora
+                            dignissimos sunt dicta velit? Nemo architecto beatae quaerat commodi odit.</p>
+                    </div>
+                    <hr>
+                    <div class="bottom">
+                        <h2>Lorem, ipsum dolor.</h2>
+                        <img src="download8.jpg" width="200px" border-radius="10px">
+                        <p>Lorem ipsum dolor expedita Lorem ipsum dolor, sit amet consectetur adipisicing elit
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit maiores, hic nemo vitae blanditiis
+                            iure voluptates quaerat explicabo in porro at, natus tempora
+                            dignissimos sunt dicta velit? Nemo architecto beatae quaerat commodi odit
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit..</p>
+                    </div>
+                </div>
+                <div class="rgt-sction">
+                    <ul>
+                        <li><img src="images9.jpg" width="130px" border-radius="5px">
+                            <div>
+                                <h2>Lorem, ipsum.</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, ipsa.</p>
+                            </div>
+                        </li>
+                        <li><img src="download4.jpg" width="130px" border-radius="5px">
+                            <div>
+                                <h2>Lorem, ipsum.</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, ipsa.</p>
+                            </div>
+                        </li>
+                        <li><img src="download5.jpg" width="130px" border-radius="5px">
+                            <div>
+                                <h2>Lorem, ipsum.</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, ipsa.</p>
+                            </div>
+                        </li>
+                        <li><img src="download6.jpg" width="200px" border-radius="5px">
+                            <div>
+                                <h2>Lorem, ipsum.</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, ipsa.</p>
+                            </div>
+                        </li>
+                        <li><img src="download7.jpg" width="200px" border-radius="5px">
+                            <div>
+                                <h2>Lorem, ipsum.</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, ipsa.</p>
+                            </div>
+                        </li>
+                        <li><img src="download8.jpg" width="130px" border-radius="5px">
+                            <div>
+                                <h2>Lorem, ipsum.</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, ipsa.</p>
+                            </div>
+                        </li>
+                        <li><img src="images9.jpg" width="130px" border-radius="5px">
+                            <div>
+                                <h2>Lorem, ipsum.</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, ipsa.</p>
+                            </div>
+                        </li>
+                        <li><img src="download1.jpg" width="130px" border-radius="5px">
+                            <div>
+                                <h2>Lorem, ipsum.</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, ipsa.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
